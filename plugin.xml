@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.cordova.teamViewerSDK"
+        version="0.0.1">
+
+  <name>Team Viewer SDK</name>
+  <description>A Cordova plugin that provides interface for native Android and iOS Team Viewer SDK.</description>
+  <author>Vladislav Dugnist</author>
+  <keywords>teamviewer, team, viewer, remote, access</keywords>
+  <license>Apache 2.0 License</license>
+
+  <js-module src="www/teamViewerSDK.js" name="TeamViewerSDK">
+    <clobbers target="TeamViewerSDK"/>
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <!-- SDK methods mapping -->
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="TeamViewerSDK">
+          <param name="android-package" value="com.cordova.teamViewerSDK.TeamViewerSDK" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/TeamViewerSDK.java" target-dir="src/com/cordova/teamViewerSDK"/>
+
+    <!-- adding sdk -->
+    <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    <resource-file src="lib/android/ScreenSharingSDK.aar" target="lib/android/ScreenSharingSDK.aar" />
+  </platform>
+
+</plugin>
