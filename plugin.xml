@@ -15,12 +15,17 @@
 
   <!-- android -->
   <platform name="android">
+    <!-- SDK methods mapping -->
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="TeamViewerSDK">
           <param name="android-package" value="com.cordova.teamViewerSDK.TeamViewerSDK" />
       </feature>
     </config-file>
     <source-file src="src/android/TeamViewerSDK.java" target-dir="src/com/cordova/teamViewerSDK"/>
+
+    <!-- adding sdk -->
+    <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    <resource-file src="lib/android/ScreenSharingSDK.aar" target="lib/android/ScreenSharingSDK.aar" />
   </platform>
 
 </plugin>

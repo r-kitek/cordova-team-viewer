@@ -5,23 +5,23 @@ module.exports =
       cordova.exec(successCallback,
                    failureCallback,
                    "TeamViewerSDK",
-                   "alert",
+                   "openSessionWithConfigurationId",
                    [token, configurationId, name, description]);
     },
-    openSessionWithSessionId: function(token, sessionId, name, description, successCallback, failureCallback)
+    openSessionWithSessionCode: function(token, sessionCode, successCallback, failureCallback)
     {
       cordova.exec(successCallback,
                    failureCallback,
                    "TeamViewerSDK",
-                   "alert",
-                   [token, sessionId, name, description]);
+                   "openSessionWithSessionId",
+                   [token, sessionCode]);
     },
     closeCurrentSession: function()
     {
       cordova.exec(successCallback,
                    failureCallback,
                    "TeamViewerSDK",
-                   "alert",
-                   [token, configurationId, name, description]);
+                   "closeCurrentSession",
+                   null);
     }
 };
