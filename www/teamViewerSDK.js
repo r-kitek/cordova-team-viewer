@@ -13,12 +13,12 @@ module.exports =
       cordova.exec(successCallback,
                    failureCallback,
                    "TeamViewerSDK",
-                   "openSessionWithSessionId",
+                   "openSessionWithSessionCode",
                    [token, sessionCode]);
     },
-    closeCurrentSession: function()
+    closeCurrentSession: function(successcallback, failureCallback)
     {
-      cordova.exec(successCallback,
+      cordova.exec(successcallback,
                    failureCallback,
                    "TeamViewerSDK",
                    "closeCurrentSession",

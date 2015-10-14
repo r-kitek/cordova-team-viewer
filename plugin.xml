@@ -23,9 +23,30 @@
     </config-file>
     <source-file src="src/android/TeamViewerSDK.java" target-dir="src/com/cordova/teamViewerSDK"/>
 
-    <!-- adding sdk -->
+    <!-- adding team viewer sdk -->
     <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
     <resource-file src="lib/android/ScreenSharingSDK.aar" target="lib/android/ScreenSharingSDK.aar" />
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <!-- SDK methods mapping -->
+    <config-file target="config.xml" parent="/*">
+      <feature name="TeamViewerSDK">
+        <param name="ios-package" value="CDVTeamViewerSDK" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/CDVTeamViewerSDK.h" />
+    <source-file src="src/ios/CDVTeamViewerSDK.m" />
+
+    <!-- adding team viewer sdk -->
+    <framework src="lib/ios/ScreenSharingSDK.framework" custom="true"/>
+    <framework src="SystemConfiguration.framework" />
+    <framework src="AudioToolbox.framework" />
+    <framework src="UIKit.framework" />
+    <framework src="libz.tbd" />
+    <resource-file src="lib/ios/ScreenSharingSDK.framework/Versions/A/Resources/ScreenSharingSDKResources.bundle" />
   </platform>
 
 </plugin>
