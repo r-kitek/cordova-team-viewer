@@ -5,7 +5,7 @@ A Cordova plugin that provides interface for native Android and iOS Team Viewer 
 
 To install current plugin run a command from your cordova project folder:
 
-    cordova plugin add https://github.com/vdugnist/cordovaTeamViewerSDK
+    cordova plugin add https://github.com/dumont-group/cordovaTeamViewerSDK
 
 If you're building iOS project, you also have to set deployment target >= 7.0 and set **Targets** -> **"your_project_name"** -> **Build Settings** -> **Enable Bitcode = NO** in Xcode project.
 
