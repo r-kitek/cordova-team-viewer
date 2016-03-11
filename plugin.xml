@@ -21,6 +21,12 @@
           <param name="android-package" value="com.cordova.teamViewerSDK.TeamViewerSDK" />
       </feature>
     </config-file>
+
+    <!-- Adding permissions to manifest -->
+    <config-file parent="/manifest" target="AndroidManifest.xml">
+           <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    </config-file>
+
     <source-file src="src/android/TeamViewerSDK.java" target-dir="src/com/cordova/teamViewerSDK"/>
 
     <!-- adding team viewer sdk -->
