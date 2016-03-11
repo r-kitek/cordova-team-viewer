@@ -46,7 +46,7 @@
     <framework src="AudioToolbox.framework" />
     <framework src="UIKit.framework" />
     <framework src="libz.tbd" />
-    <resource-file src="lib/ios/ScreenSharingSDK.framework/Versions/A/Resources/ScreenSharingSDKResources.bundle" />
+    <resource-file src="lib/ios/ScreenSharingSDK.framework/Resources/ScreenSharingSDKResources.bundle" />
   </platform>
 
 </plugin>
