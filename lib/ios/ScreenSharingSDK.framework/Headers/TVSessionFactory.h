@@ -12,8 +12,10 @@
 @protocol TVSessionCreationDelegate;
 @class TVSession;
 
-
+__attribute__((visibility("default")))
 extern NSString * const TVSimulatorException; // The function you tried to use, doesn't work on the simulator.
+
+__attribute__((visibility("default")))
 extern NSString * const TVMissingBundleException; // The ScreenSharingSDK resource bundle is missing.
 
 /**

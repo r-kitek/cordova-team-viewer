@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
+__attribute__((visibility("default")))
 extern NSString * const TVIllegalArgumentException; // One of the arguments passed isn't valid. See reason for details.
 
 @class TVSessionConfiguration;

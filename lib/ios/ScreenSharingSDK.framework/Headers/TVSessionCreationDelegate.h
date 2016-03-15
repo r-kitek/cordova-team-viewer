@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
+__attribute__((visibility("default")))
 extern NSString *const TVSessionCreationErrorDomain;
 
 /**
@@ -54,6 +55,7 @@ typedef NS_ENUM(NSInteger, TVSessionCreationError)
  * The TVSessionCreationDelegate protocol defines methodes, that are used to receive
  * feedback from the TVSessionFactory class.
  */
+__attribute__((visibility("default")))
 @protocol TVSessionCreationDelegate <NSObject>
 @required
 /**
