@@ -1,6 +1,6 @@
 {
   "name": "cordova-team-viewer",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A Cordova plugin that provides interface for native Android and iOS Team Viewer SDK.",
   "cordova": {
     "id": "com.cordova.team-viewer",
