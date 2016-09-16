@@ -5,8 +5,12 @@ A Cordova plugin that provides interface for native Android and iOS Team Viewer 
 
 To install current plugin run a command from your cordova project folder:
 
-    cordova plugin add https://github.com/dumont-group/cordovaTeamViewerSDK
-    
+    cordova plugin add https://github.com/r-kitek/cordova-team-viewer 
+
+or using npm
+
+    cordova plugin add cordova-team-viewer
+
 ## Usage
 If you don't know how to get configurationId and token, refer to [before you start](https://integrate.teamviewer.com/en/develop/screen-sharing-sdk/android-tutorial/#H3_header_3) section in Team Viewer documentation.
 
