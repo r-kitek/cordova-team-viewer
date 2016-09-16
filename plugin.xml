@@ -52,6 +52,10 @@
     <framework src="AudioToolbox.framework" />
     <framework src="UIKit.framework" />
     <framework src="libz.tbd" />
+    <framework src="QuartzCore.framework" />
+    <framework src="Security.framework" />
+    <framework src="libz.dylib" />
+    <framework src="libstdc++.dylib" />
     <resource-file src="lib/ios/ScreenSharingSDK.framework/Resources/ScreenSharingSDKResources.bundle" />
   </platform>
 
