@@ -43,11 +43,15 @@ If you don't know how to get configurationId and token, refer to [before you sta
 
     TeamViewerSDK.closeCurrentSession();
 
-## Building in Xcode
+## Building for iOS
+If you see "symbol not found for architecture armv7" during build, then you could add 
 
-If you're building iOS project in Xcode, you also have to set deployment target >= 7.0 and set **Targets** -> **"your_project_name"** -> **Build Settings** -> **Enable Bitcode = NO** in Xcode project preferences.
+    <preference name="deployment-target" value="7.0" />
 
-    
+to `config.xml`.
+
+If you're building iOS project in Xcode, you also have to set  **Targets** -> **"your_project_name"** -> **Build Settings** -> **Enable Bitcode = NO** in Xcode project preferences.
+ 
 ## License
 
 This plugin is released under MIT License. See LICENSE for details
