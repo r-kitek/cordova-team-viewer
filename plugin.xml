@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.cordova.teamViewerSDK"
+        id="cordova-team-viewer"
         version="0.1.0">
 
   <name>Team Viewer SDK</name>
