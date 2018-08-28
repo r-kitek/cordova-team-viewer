@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-team-viewer"
+        id="cordova-plugin-team-viewer"
         version="0.1.0">
 
   <name>Team Viewer SDK</name>
@@ -32,6 +32,7 @@
     <!-- adding team viewer sdk -->
     <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
     <resource-file src="lib/android/ScreenSharingSDK.aar" target="lib/android/ScreenSharingSDK.aar" />
+    <resource-file src="lib/android/ScreenSharingSDK.aar" target="app/lib/android/ScreenSharingSDK.aar" />
   </platform>
 
   <!-- ios -->
