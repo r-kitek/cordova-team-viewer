@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="cordova-plugin-team-viewer"
-        version="0.1.0">
+        version="0.1.3">
 
   <name>Team Viewer SDK</name>
   <description>A Cordova plugin that provides interface for native Android and iOS Team Viewer SDK.</description>
