@@ -1,9 +1,9 @@
 {
-  "name": "cordova-team-viewer",
-  "version": "0.1.2",
+  "name": "cordova-plugin-team-viewer",
+  "version": "0.1.3",
   "description": "A Cordova plugin that provides interface for native Android and iOS Team Viewer SDK.",
   "cordova": {
-    "id": "com.cordova.team-viewer",
+    "id": "cordova-plugin-team-viewer",
     "platforms": [
       "android",
       "ios"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/r-kitek/cordova-team-viewer.git"
+    "url": "git+https://github.com/lgrignon/cordova-plugin-team-viewer.git"
   },
   "keywords": [
     "teamviewer",
@@ -26,7 +26,7 @@
   "author": "vdugnist",
   "license": "Apache 2.0 License",
   "bugs": {
-    "url": "https://github.com/r-kitek/cordova-team-viewer/issues"
+    "url": "https://github.com/lgrignon/cordova-plugin-team-viewer/issues"
   },
-  "homepage": "https://github.com/r-kitek/cordova-team-viewer#readme"
+  "homepage": "https://github.com/lgrignon/cordova-plugin-team-viewer#readme"
 }
